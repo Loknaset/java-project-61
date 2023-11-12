@@ -10,3 +10,5 @@ https://asciinema.org/a/IwoLk8E7Cq7JmFFLwoiBJGg11 - GCD Right
 https://asciinema.org/a/SOZggeiOGSayIpnGj4XrfLTr2 - GCD Wrong
 https://asciinema.org/a/0xsNPmjK1EuJ8Eo9GIDLBRLV2 - Progression Right
 https://asciinema.org/a/SOZ8EGomRSRu9Wm1e1piLUanK - Progression Wrong
+https://asciinema.org/a/hgTgAz8nUH7MDuLJ3hBZ18OgY - Prime Right
+https://asciinema.org/a/bvCYcePqezbigOrEVUNMJNmn8 - Prime Wrong

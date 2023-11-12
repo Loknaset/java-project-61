@@ -1,10 +1,7 @@
 package hexlet.code.games;
 
 import hexlet.code.Engine;
-
-import java.lang.reflect.Array;
 import java.util.Arrays;
-
 import static hexlet.code.Engine.numbersOfRounds;
 
 public class GCD {
