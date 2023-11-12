@@ -26,12 +26,15 @@ public class App {
             case "4":
                 Cli.greeting();
                 GCD.runGame();
+                break;
             case "5":
                 Cli.greeting();
                 Progression.runGame();
+                break;
             case "6":
                 Cli.greeting();
                 Prime.runGame();
+                break;
             default:
                 System.exit(0);
         }

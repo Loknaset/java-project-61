@@ -12,7 +12,7 @@ public class Progression {
 		var y = 1 + Math.random() * 5;
 		int number2 = (int) y;
 		int[] progression = createProgression(number1, number2);
-		var z = Math.random() * 10;
+		var z = 1 + Math.random() * 10;
 		int hiddenNumber = ((int) z) - 1;
 		var result = hideNumber(progression, hiddenNumber);
 		String progressionWithHiddenNumber = createProgressionWithHiddenNumber(progression, hiddenNumber);
