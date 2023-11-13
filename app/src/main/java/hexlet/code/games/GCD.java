@@ -8,10 +8,10 @@ public class GCD {
 	static final String gameTask = "Find the greatest common divisor of given numbers.";
 
 	public static String[] generateRoundData() {
-		var x = Math.random() * 100;
-		int number1 = (int) x;
-		var y = Math.random() * 100;
-		int number2 = (int) y;
+		var x = Math.random() * 50;
+		int number1 = (int) x + 1;
+		var y = Math.random() * 50;
+		int number2 = (int) y + 1;
 		String[] numbersAndRightAnswer = new String[2];
 		int[] numbers1 = findDivisors(number1);
 		int[] numbers2 = findDivisors(number2);
