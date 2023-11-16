@@ -10,7 +10,7 @@ public class App {
         System.out.println("1 - Greet\n2 - Even\n3 - Calc\n4 - GCD\n5 - Progression\n6 - Prime\n0 - Exit");
         System.out.println("Your choice:");
         Scanner number = new Scanner(System.in);
-        String numberOfGame = number.nextLine();
+        String numberOfGame = number.next();
         switch (numberOfGame) {
             case "1":
                 Cli.greeting();
