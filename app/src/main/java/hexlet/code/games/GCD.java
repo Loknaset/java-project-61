@@ -6,12 +6,14 @@ import static hexlet.code.Engine.numbersOfRounds;
 
 public class GCD {
 	static final String gameTask = "Find the greatest common divisor of given numbers.";
+	static final int minNumber = 1;
+	static final int maxNumber = 50;
 
 	public static String[] generateRoundData() {
-		var x = Math.random() * 50;
-		int number1 = (int) x + 1;
-		var y = Math.random() * 50;
-		int number2 = (int) y + 1;
+		var x = Math.random() * maxNumber;
+		int number1 = (int) x + minNumber;
+		var y = Math.random() * maxNumber;
+		int number2 = (int) y + minNumber;
 		String[] numbersAndRightAnswer = new String[2];
 		int[] numbers1 = findDivisors(number1);
 		int[] numbers2 = findDivisors(number2);

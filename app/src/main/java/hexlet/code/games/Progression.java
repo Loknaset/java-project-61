@@ -5,15 +5,19 @@ import static hexlet.code.Engine.numbersOfRounds;
 
 public class Progression {
 	static final String gameTask = "What number is missing in the progression?";
+	static final int maxProgressionStartNumber = 20;
+	static final int maxProgression = 10;
+	static final int minNumber = 1;
+	static final int numberOfProgression = 10;
 
 	public static String[] generateRoundData() {
-		var x = Math.random() * 20;
+		var x = Math.random() * maxProgressionStartNumber;
 		int number1 = (int) x;
-		var y = 1 + Math.random() * 5;
+		var y = minNumber + Math.random() * maxProgression;
 		int number2 = (int) y;
 		int[] progression = createProgression(number1, number2);
-		var z = 1 + Math.random() * 10;
-		int hiddenNumber = ((int) z) - 1;
+		var z = minNumber + Math.random() * numberOfProgression;
+		int hiddenNumber = ((int) z) - minNumber;
 		var result = hideNumber(progression, hiddenNumber);
 		String progressionWithHiddenNumber = createProgressionWithHiddenNumber(progression, hiddenNumber);
 		String[] progressionAndRightAnswer = new String[2];

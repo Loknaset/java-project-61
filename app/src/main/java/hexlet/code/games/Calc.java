@@ -6,6 +6,7 @@ import static hexlet.code.Engine.numbersOfRounds;
 public class Calc {
 
 	static final String gameTask = "What is the result of the expression?";
+	static final int maxNumber = 25;
 
 	public static String[] generateRoundData() {
 		String[] operator = {"+", "-", "*"};
@@ -13,10 +14,9 @@ public class Calc {
 		int b = 3;
 		int random = a + (int) (Math.random() * b);
 		var randomOperator = operator[random];
-
-		var x = Math.random() * 25;
+		var x = Math.random() * maxNumber;
 		int number1 = (int) x;
-		var y = Math.random() * 25;
+		var y = Math.random() * maxNumber;
 		int number2 = (int) y;
 		String[] expressionAndRightAnswer = new String[2];
 		expressionAndRightAnswer[0] = String.format("%d %s %d", number1, randomOperator, number2);
