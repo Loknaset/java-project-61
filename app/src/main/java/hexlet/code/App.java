@@ -10,28 +10,28 @@ public class App {
         System.out.println("1 - Greet\n2 - Even\n3 - Calc\n4 - GCD\n5 - Progression\n6 - Prime\n0 - Exit");
         System.out.println("Your choice: ");
         Scanner number = new Scanner(System.in);
-        String numberOfGame = number.next();
+        int numberOfGame = number.nextInt();
         switch (numberOfGame) {
-            case "1":
+            case 1:
                 Cli.greeting();
                 break;
-            case "2":
+            case 2:
                 Cli.greeting();
                 Even.runGame();
                 break;
-            case "3":
+            case 3:
                 Cli.greeting();
                 Calc.runGame();
                 break;
-            case "4":
+            case 4:
                 Cli.greeting();
                 GCD.runGame();
                 break;
-            case "5":
+            case 5:
                 Cli.greeting();
                 Progression.runGame();
                 break;
-            case "6":
+            case 6:
                 Cli.greeting();
                 Prime.runGame();
                 break;
